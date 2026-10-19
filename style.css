@@ -1,0 +1,114 @@
+
+body {
+    background-color: #F4F0E6;
+    color: #173D32;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Headings */
+
+h1, h2, h3, h4 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Brand header */
+
+header {
+    background-color: #173D32;
+    color: #F4F0E6;
+    padding: 45px 7% 25px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header h4 {
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Navigation bar */
+
+nav {
+     background-color: #173D32;
+    padding: 22px 7%;
+    border-top: 1px solid #668074;
+    border-bottom: 1px solid #668074;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #F4F0E6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+
+#hero {
+    background-color: #F4F0E6;
+    color: #173D32;
+    padding: 100px 8%;
+    border-bottom: 1px solid #173D32;
+}
+
+#hero h1 {
+    font-size: 64px;
+    max-width: 850px;
+    line-height: 1.15;
+    border-left: 6px solid #173D32;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navigation on small screens */
+
+@media (max-width: 480px) {
+    nav {
+        padding: 16px 10px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+}
