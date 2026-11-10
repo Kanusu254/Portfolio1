@@ -1,130 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>   
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FelixTheFreelancer | Digital Brand Specialist</title>
+
+    <title>FelixTheFreelancer | Digital Marketing & Software</title>
+
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<nav>
+    <!-- Navigation -->
+    <nav>
 
         <a href="#hero" class="logo">
             <span class="logo-name">FELIX</span>
             <span class="logo-subtitle">THE FREELANCER</span>
         </a>
 
-        <div class="nav-links">
-            <a href="#about">About</a>
+        <button
+            class="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="#about">About Me</a>
             <a href="#skills">Services</a>
             <a href="#projects">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact Me</a>
         </div>
 
-</nav>
-       
-<main>
+    </nav>
 
-    <section id="hero">
 
-    <div class="hero-content">
+    <main>
 
-        <p class="hero-intro">
-            HELLO, I'M FELIX.
-        </p>
+        <!-- Hero Section -->
+        
+<section id="hero">
 
-        <h1>
-            I help businesses build their digital
-            presence and grow online.
-        </h1>
+    <div class="hero-layout">
 
-        <p class="hero-description">
-            I combine digital marketing and software development
-            to help businesses reach more people and build a
-            stronger online presence.
-        </p>
+        <!-- Hero Text -->
+        <div class="hero-content">
 
-        <div class="hero-buttons">
+            <p class="hero-intro">
+                <span id="typing-text">HELLO, I'M FELIX.</span>
+                <span class="typing-cursor" aria-hidden="true"></span>
+            </p>
 
-            <a href="#contact" class="primary-button">
-                Let's Work Together
-            </a>
+           
+            <h1>
+                I help businesses build their
+                <span>digital presence.</span>
+            </h1>
 
-            <a href="#projects" class="secondary-button">
-                Explore My Work
-            </a>
+            <p class="hero-description">
+                I combine digital marketing and software engineering to help
+                businesses reach more people online and build a stronger digital presence
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="primary-button">
+                    Let's Work Together
+                </a>
+
+                <a href="#projects" class="secondary-button">
+                    Explore My Work
+                </a>
+
+            </div>
 
         </div>
 
-    </section>
 
-    <section id="about">
+        <!-- Hero Visual Composition -->
+        <div class="hero-visual" aria-hidden="true">
 
-        <div class="about-content">
+            <div class="visual-topline">
+                <span>INDEPENDENT DIGITAL CREATIVE</span>
+                <span>01 — 03</span>
+            </div>
 
-        <h2>About Me</h2>
+            <div class="visual-main">
 
-        <p>
-            Hey, I'm Felix, a Digital Marketing Specialist
-            and Software Engineer who helps businesses
-            connect with their audiences and build their
-            online presence through marketing and technology.
-        </p>
+                <div class="visual-orbit">
+                    <div class="orbit-ring"></div>
+                    <div class="orbit-ring orbit-ring-two"></div>
 
-        <p>
-            My journey started in digital marketing, where
-            I explored how businesses communicate with
-            customers, build their brands and use digital
-            platforms to reach more people.
-        </p>
+                    <div class="orbit-core">
+                        <span>FTF</span>
+                    </div>
 
-        <p>
-            As I worked on different projects and my own
-            ventures, I became increasingly curious about
-            the technology behind the websites and digital
-            experiences we use every day. That curiosity
-            led me into software engineering.
-        </p>
+                    <span class="orbit-dot orbit-dot-one"></span>
+                    <span class="orbit-dot orbit-dot-two"></span>
+                    <span class="orbit-dot orbit-dot-three"></span>
+                </div>
 
-        <p>
-            Today, I bring these two fields together to help
-            businesses not only get noticed online but also
-            build digital experiences that move their ideas
-            forward.
-        </p>
+                <div class="visual-card visual-card-marketing">
+                    <span class="visual-card-number">01</span>
+                    <span class="visual-card-title">STRATEGY</span>
+                    <span class="visual-card-detail">Brainstorm different solutions.</span>
+                </div>
+
+                <div class="visual-card visual-card-development">
+                    <span class="visual-card-number">02</span>
+                    <span class="visual-card-title">SOFTWARE DEVELOPMENT</span>
+                    <span class="visual-card-detail">Build appropriate landing pages.</span>
+                </div>
+
+                <div class="visual-card visual-card-strategy">
+                    <span class="visual-card-number">03</span>
+                    <span class="visual-card-title">MARKETING</span>
+                    <span class="visual-card-detail">Target the right audience.</span>
+                </div>
+
+            </div>
+
+            <div class="visual-bottomline">
+                <span>WE'LL                                              STRATEGIZE</span>
+                <span class="visual-bottom-symbol">✳</span>
+                <span>EXECUTE</span>
+                <span class="visual-bottom-symbol">✳</span>
+                <span>THEN                                                ANALYZE</span>
+            </div>
+
+        </div>
 
     </div>
 
 </section>
 
+
+
+        <!-- About Section -->
+        <section id="about">
+
+            <div class="about-content">
+
+                <h2>About Me</h2>
+
+                <p>
+                    Hey, I'm Felix, a Digital Marketing Specialist
+                    and Software Engineer who helps businesses
+                    connect with their audiences and build their
+                    online presence through marketing and technology.
+                </p>
+
+                <p>
+                    My journey started in digital marketing, where
+                    I explored how businesses communicate with
+                    customers, build their brands and use digital
+                    platforms to reach more people.
+                </p>
+
+                <p>
+                    As I worked on different projects and my own
+                    ventures, I became increasingly curious about
+                    the technology behind the websites and digital
+                    experiences we use every day. That curiosity
+                    led me into software engineering.
+                </p>
+
+                <p>
+                    Today, I bring these two fields together to help
+                    businesses not only get noticed online but also
+                    build digital experiences that move their ideas
+                    forward.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects Section -->
         <section id="projects">
 
-            <h2>
-                Projects
-            </h2>
+            <h2>Projects</h2>
 
-            <h3>
-                Ideas I am bringing to life
-            </h3>
+            <h3>Ideas I am bringing to life</h3>
 
             <p>
                 Every project teaches me something different.
-                Here's a look at my own ventures that I've been working on.
+                Here's a look at my own ventures that I've been
+                working on.
             </p>
 
+
+            <!-- Project 1: Urban Haoz -->
             <article>
 
                 <h3>01. Urban Haoz</h3>
 
-                <p><strong>
-                    Housing platform
-                </strong></p>
+                <p>
+                    <strong>Housing platform</strong>
+                </p>
 
-                <img 
-                src="./images/Software Image 5.jpg" 
-                alt="Urban Haoz"
+                <img
+                    src="./images/Software Image 5.jpg"
+                    alt="Urban Haoz housing platform project"
                 >
 
                 <p>
@@ -145,21 +230,25 @@
                     structure and digital content.
                 </p>
 
-                <p><em>Status: In development.</em></p>
+                <p>
+                    <em>Status: In development.</em>
+                </p>
 
             </article>
 
+
+            <!-- Project 2: The Uncharted Tribe -->
             <article>
 
                 <h3>02. The Uncharted Tribe</h3>
 
-                <p><strong>                    
-                    Adventure and experiences
-                </strong></p>
+                <p>
+                    <strong>Adventure and experiences</strong>
+                </p>
 
-                <img 
-                src="./images/Software Image 2.jpg" 
-                alt="The Uncharted Tribe"
+                <img
+                    src="./images/Software Image 2.jpg"
+                    alt="The Uncharted Tribe adventure brand project"
                 >
 
                 <p>
@@ -180,19 +269,25 @@
                     turn the bigger idea into something practical.
                 </p>
 
-                <p><em>Status: Brand development and execution.</em></p>
+                <p>
+                    <em>Status: Brand development and execution.</em>
+                </p>
+
             </article>
 
+
+            <!-- Project 3: Kuku Mafia -->
             <article>
+
                 <h3>03. Kuku Mafia</h3>
 
-                <p><strong>
-                    Food business
-                </strong></p>
+                <p>
+                    <strong>Food business</strong>
+                </p>
 
-                <img 
-                src="./images/Software Image 1.jpg" 
-                alt="Kuku Mafia"
+                <img
+                    src="./images/Software Image 1.jpg"
+                    alt="Kuku Mafia food business project"
                 >
 
                 <p>
@@ -214,48 +309,49 @@
                     how good a design looks.
                 </p>
 
-                <p><em>Status: Ongoing business project.</em></p>
+                <p>
+                    <em>Status: Ongoing business project.</em>
+                </p>
+
             </article>
 
         </section>
 
+
+        <!-- Services Section -->
         <section id="skills">
 
-            <h2>
-                Skills
-            </h2>
+            <h2>Services</h2>
 
             <p>
                 Good ideas deserve to be seen. I help businesses
                 build their online presence through digital marketing,
                 social media and websites that give people a reason
                 to pay attention.
-            </p>    
+            </p>
+
 
             <div>
 
-                <h3>
-                    Social Media Management
-                </h3>
+                <h3>Social Media Management</h3>
 
                 <p>
                     Helping brands stay active online, connect with
                     their audience and create content with a purpose.
                 </p>
-                    
-                <ul>                                          
+
+                <ul>
                     <li>Social media content planning</li>
                     <li>Page management</li>
-                    <li>Audience engagement</li>                    
+                    <li>Audience engagement</li>
                 </ul>
 
             </div>
 
+
             <div>
-                    
-                <h3>
-                    Digital Marketing &amp; SEO
-                </h3>
+
+                <h3>Digital Marketing &amp; SEO</h3>
 
                 <p>
                     Helping businesses improve their online visibility
@@ -270,11 +366,10 @@
 
             </div>
 
+
             <div>
 
-                <h3>
-                    Websites &amp; Online Presence
-                </h3>
+                <h3>Websites &amp; Online Presence</h3>
 
                 <p>
                     Building websites that give businesses a home
@@ -284,7 +379,7 @@
 
                 <ul>
                     <li>Website design and development</li>
-                    <li>Wordpress &amp; custom HTML websites</li>
+                    <li>WordPress &amp; custom HTML websites</li>
                     <li>Responsive design</li>
                 </ul>
 
@@ -292,20 +387,20 @@
 
         </section>
 
+
+        <!-- Contact Section -->
         <section id="contact">
 
-            <h2>
-                Contact
-            </h2>
+            <h2>Contact Me</h2>
 
             <p>
-                If you have a project in mind or want to 
-                discuss how I can help your business, 
+                If you have a project in mind or want to
+                discuss how I can help your business,
                 feel free to reach out.
             </p>
 
             <p>
-                Email: 
+                Email:
                 <a href="mailto:mbuguafelix27@gmail.com">
                     mbuguafelix27@gmail.com
                 </a>
@@ -315,12 +410,14 @@
 
     </main>
 
+
+    <!-- Footer -->
     <footer>
 
         <p>
             &copy; 2026 Felix The Freelancer. All rights reserved.
         </p>
-        
+
     </footer>
 
 </body>
