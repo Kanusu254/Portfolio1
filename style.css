@@ -435,73 +435,101 @@ nav .logo {
 
 #about {
     background-color: #E9EDE5;
-    padding: 110px 8%;
+    padding: 105px 8%;
 }
 
 .about-content {
-    max-width: 1250px;
+    width: 100%;
+    max-width: 1180px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 0.85fr 1.15fr;
-    gap: 85px;
+    gap: 90px;
     align-items: start;
 }
 
 .about-heading {
-    position: sticky;
-    top: 90px;
-    padding-top: 8px;
+    position: relative;
+    padding: 8px 0 0 22px;
+    border-left: 2px solid #A4773F;
 }
 
 .about-label {
     display: block;
     color: #A4773F;
-    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
     font-weight: bold;
     letter-spacing: 3px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 
 .about-heading h2 {
     color: #173D32;
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    font-size: clamp(42px, 4.5vw, 60px);
-    line-height: 1.12;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 5vw, 66px);
+    font-weight: normal;
+    line-height: 1.02;
     letter-spacing: -2px;
     margin: 0;
 }
 
 .about-heading h2 span {
     display: block;
-    margin-top: 22px;
+    margin-top: 23px;
+    color: #668F7C;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.42em;
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+.about-side-note {
+    display: block;
+    margin-top: 38px;
     color: #668F7C;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.48em;
-    font-weight: normal;
-    line-height: 1.5;
-    letter-spacing: -0.3px;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+}
+
+.about-side-note span {
+    color: #A4773F;
+    padding: 0 5px;
 }
 
 .about-story {
-    max-width: 690px;
+    max-width: 680px;
+    padding-top: 3px;
 }
 
 .about-story p {
     color: #424942;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.95;
-    margin-bottom: 23px;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 0 0 21px;
+}
+
+.about-story .about-lead {
+    color: #173D32;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    line-height: 1.65;
+    margin-bottom: 25px;
 }
 
 .about-closing {
-    margin-top: 35px;
-    padding-left: 20px;
-    border-left: 3px solid #A4773F;
+    display: inline-block;
+    margin-top: 12px;
+    padding-top: 13px;
+    border-top: 1px solid rgba(164, 119, 63, 0.55);
     color: #173D32;
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    font-style: italic;
     line-height: 1.6;
 }
 
@@ -514,78 +542,46 @@ nav .logo {
 
     .about-content {
         grid-template-columns: 1fr;
-        gap: 35px;
+        gap: 32px;
     }
 
     .about-heading {
-        position: static;
+        padding-left: 18px;
     }
 
     .about-heading h2 {
-        font-size: 42px;
+        font-size: 50px;
     }
 
     .about-heading h2 span {
-        font-size: 0.55em;
+        max-width: 420px;
+        font-size: 0.48em;
+    }
+
+    .about-side-note {
+        margin-top: 22px;
+    }
+
+    .about-story .about-lead {
+        font-size: 19px;
     }
 }
 
 @media (max-width: 600px) {
     .about-heading h2 {
-        font-size: 38px;
+        font-size: 44px;
+    }
+
+    .about-heading h2 span {
+        font-size: 0.46em;
     }
 
     .about-story p {
-        font-size: 15px;
-    }
-}
-
-
-/* About visual personality */
-
-.about-heading {
-    position: sticky;
-    top: 90px;
-    isolation: isolate;
-}
-
-.about-heading::before {
-    content: "FTF";
-    position: absolute;
-    top: -45px;
-    right: 0;
-    z-index: -1;
-    color: rgba(23, 61, 50, 0.07);
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    font-size: clamp(100px, 13vw, 165px);
-    font-weight: bold;
-    letter-spacing: -12px;
-    line-height: 1;
-    pointer-events: none;
-}
-
-.about-heading::after {
-    content: "✳  CURIOUS BY DEFAULT";
-    display: inline-block;
-    margin-top: 30px;
-    padding: 9px 13px;
-    border: 1px solid rgba(23, 61, 50, 0.25);
-    border-radius: 3px;
-    color: #668F7C;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-@media (max-width: 768px) {
-    .about-heading::before {
-        top: -25px;
-        right: 5px;
-        font-size: 110px;
+        font-size: 14px;
     }
 
-    .about-heading::after {
-        margin-top: 20px;
+    .about-story .about-lead {
+        font-size: 18px;
     }
 }
 
