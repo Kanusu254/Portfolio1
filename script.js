@@ -207,3 +207,26 @@ if (supportsHover && !prefersReducedMotion) {
   observer.observe(video);
  }
 })();
+
+
+// Keep the secondary waterfall film lightweight and pause it off-screen.
+(() => {
+    const film = document.querySelector(".tribe-board-waterfall");
+    if (!film || film.tagName !== "VIDEO") return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const saveData = navigator.connection && navigator.connection.saveData;
+    if (reduceMotion || saveData) { film.pause(); return; }
+    if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const playback = film.play();
+                    if (playback && playback.catch) playback.catch(() => {});
+                } else {
+                    film.pause();
+                }
+            });
+        }, { threshold: 0.08 });
+        observer.observe(film);
+    }
+})();
