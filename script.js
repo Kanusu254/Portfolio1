@@ -117,3 +117,29 @@ if (typingText && typingCursor) {
     }
 
 }
+
+
+/* 3. HERO STAGE POINTER MOTION */
+
+const heroStage = document.querySelector(".hero-stage");
+
+if (heroStage) {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const finePointer = window.matchMedia("(pointer: fine)").matches;
+
+    if (!reduceMotion && finePointer) {
+        heroStage.addEventListener("pointermove", event => {
+            const bounds = heroStage.getBoundingClientRect();
+            const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+            const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+
+            heroStage.style.setProperty("--tilt-x", `${x * 2.5}deg`);
+            heroStage.style.setProperty("--tilt-y", `${y * -2.5}deg`);
+        });
+
+        heroStage.addEventListener("pointerleave", () => {
+            heroStage.style.setProperty("--tilt-x", "0deg");
+            heroStage.style.setProperty("--tilt-y", "0deg");
+        });
+    }
+}
