@@ -189,3 +189,21 @@ if (supportsHover && !prefersReducedMotion) {
         });
     });
 }
+
+// Cinematic hero video: respect reduced motion, data saver and viewport visibility.
+(() => {
+ const video=document.querySelector(".hero-video");
+ if(!video) return;
+ const reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+ const saveData=navigator.connection && navigator.connection.saveData;
+ if(reduceMotion || saveData){video.pause();return;}
+ if("IntersectionObserver" in window){
+  const observer=new IntersectionObserver(entries=>{
+   entries.forEach(entry=>{
+    if(entry.isIntersecting){const p=video.play();if(p&&p.catch)p.catch(()=>{});}
+    else video.pause();
+   });
+  },{threshold:.08});
+  observer.observe(video);
+ }
+})();
