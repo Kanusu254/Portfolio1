@@ -1,492 +1,601 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Marketing & Software | FelixTheFreelancer</title>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#101510">
+    <meta name="description" content="FelixTheFreelancer combines digital marketing, web development and practical digital systems to help businesses grow.">
+    <title>
+      Strategy &amp; Digital Momentum | FelixTheFreelancer
+    </title>
+    <link rel="preconnect" href="https://images.pexels.com">
+    <link rel="preconnect" href="https://videos.pexels.com">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav>
-
-        <a href="#hero" class="logo">
-            <span class="logo-name">FELIX</span>
-            <span class="logo-subtitle">THE FREELANCER</span>
-        </a>
-
-        <button
-            class="menu-toggle"
-            aria-label="Open navigation menu"
-            aria-expanded="false"
-            aria-controls="nav-links"
-        >
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <div class="nav-links" id="nav-links">
-            <a href="#about">About Me</a>
-            <a href="#skills">Services</a>
-            <a href="#projects">Portfolio</a>
-            <a href="#contact">Contact Me</a>
-        </div>
-
-    </nav>
-
-
+    <script src="script.js" defer>
+    </script>
+  </head>
+  <body>
+    <!-- Site header and navigation -->
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="FelixTheFreelancer home"><span class="brand-mark" aria-hidden="true"><i>F</i><b>T</b></span><span class="brand-name">FELIX THE<br>FREELANCER</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+        <i></i><i></i>
+      </button>
+      <nav class="primary-navigation" id="primary-navigation">
+        <a href="#about">About</a><a href="#projects">Portfolio</a><a href="#services">Services</a><a class="nav-contact" href="#contact">Let's talk <b>↗</b></a>
+      </nav>
+    </header>
+    <!-- Main page content -->
     <main>
-
-        <!-- Hero Section -->
-        
-<section id="hero">
-
-    <div class="hero-layout">
-
-        <!-- Hero Text -->
-        <div class="hero-content">
-
-            <p class="hero-intro">
-                <span id="typing-text">HELLO, I'M FELIX.</span>
-                <span class="typing-cursor" aria-hidden="true"></span>
+      <!-- 01. Hero: the first impression -->
+      <section class="hero" id="home">
+        <video class="hero-film" autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/13522169/coder-development-javascript-js-13522169.jpeg?auto=compress&cs=tinysrgb&w=2000" aria-hidden="true">
+          <source src="https://videos.pexels.com/video-files/13522169/13522169-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero-scrim">
+        </div>
+        <div class="hero-grain">
+        </div>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow hero-eyebrow">
+              <span class="status-dot"></span><span id="typed-intro" aria-label="Hello, I'm Felix.">HELLO, I'M FELIX.</span><span class="type-cursor"></span>
             </p>
-
-           
-            <h1>
-                I help businesses build their
-                <span>digital presence.</span>
+            <p class="hero-discipline" data-hero-reveal>
+              DIGITAL MARKETING <i>×</i> SOFTWARE DEVELOPMENT
+            </p>
+            <h1 aria-label="I help businesses build their digital presence.">
+              <span data-type-text="I help businesses"></span><br><span data-type-text="build their "></span><em data-type-text="digital presence."></em>
             </h1>
-
-            <p class="hero-description">
-                Through combining digital marketing and software engineering, I help
-                businesses reach more people online and build a stronger digital presence
+            <p class="hero-description" data-type-text="Through combining digital marketing and software engineering, I help businesses reach more people online and build a stronger digital presence.">
             </p>
-
-            <div class="hero-buttons">
-
-                <a href="#contact" class="primary-button">
-                    Let's Work Together
-                </a>
-
-                <a href="#projects" class="secondary-button">
-                    Explore My Work
-                </a>
-
+            <div class="hero-actions" data-hero-reveal>
+              <a class="button button-accent" href="#contact">Let's work together <b>↗</b></a><a class="text-link" href="#projects">Explore my work <b>↓</b></a>
             </div>
-
+          </div>
+          <div class="hero-console" id="ideas-console" aria-label="A visual snapshot of marketing and development work">
+            <div class="console-top">
+              <span class="console-lights"><i></i><i></i><i></i></span><span>IDEAS INTO ACTION</span><span class="console-live"><i></i> IN PROGRESS</span>
+            </div>
+            <div class="console-code">
+              <div class="console-meta">
+                <span>01 / DEVELOPMENT</span><span>index.html</span>
+              </div>
+              <div class="code-lines" aria-hidden="true">
+                <p>
+                  <b>01</b><i>&lt;section</i><em>class</em>=<strong>"big-idea"</strong><i>&gt;</i>
+                </p>
+                <p>
+                  <b>02</b> &nbsp;&nbsp;<i>&lt;h1&gt;</i>Make it matter<i>&lt;/h1&gt;</i>
+                </p>
+                <p>
+                  <b>03</b> &nbsp;&nbsp;<i>&lt;p&gt;</i>Built for people.<i>&lt;/p&gt;</i>
+                </p>
+                <p>
+                  <b>04</b><i>&lt;/section&gt;</i>
+                </p>
+              </div>
+            </div>
+            <div class="console-plan">
+              <div class="plan-heading">
+                <span>02 / MARKETING</span><span>CAMPAIGN CHECKLIST</span>
+              </div>
+              <h2>
+                Make the right moves.
+              </h2>
+              <div class="plan-rule">
+                <span></span>
+              </div>
+              <ul>
+                <li class="complete">
+                  <span>✓</span> Know who you're speaking to <small>DONE</small>
+                </li>
+                <li class="complete">
+                  <span>✓</span> Give the brand a clear voice <small>DONE</small>
+                </li>
+                <li>
+                  <span></span> Build the digital experience <small>BUILD</small>
+                </li>
+                <li>
+                  <span></span> Launch, learn and improve <small>GROW</small>
+                </li>
+              </ul>
+            </div>
+            <div class="console-foot">
+              <span>WE'LL STRATEGIZE. EXECUTE. THEN ANALYZE.</span><span>FTF / 001</span>
+            </div>
+          </div>
         </div>
-
-
-        <!-- Hero Visual Composition -->
-        <div class="hero-visual" aria-hidden="true">
-
-            <div class="visual-topline">
-                <span>INDEPENDENT DIGITAL CREATIVE</span>
-                <span>01 — 03</span>
-            </div>
-
-            <div class="visual-main">
-
-                <div class="visual-orbit">
-                    <div class="orbit-ring"></div>
-                    <div class="orbit-ring orbit-ring-two"></div>
-
-                    <div class="orbit-core">
-                        <span>FTF</span>
-                    </div>
-
-                    <span class="orbit-dot orbit-dot-one"></span>
-                    <span class="orbit-dot orbit-dot-two"></span>
-                    <span class="orbit-dot orbit-dot-three"></span>
-                </div>
-
-                <div class="visual-card visual-card-marketing">
-                    <span class="visual-card-number">01</span>
-                    <span class="visual-card-title">STRATEGY</span>
-                    <span class="visual-card-detail">Brainstorm different solutions.</span>
-                </div>
-
-                <div class="visual-card visual-card-development">
-                    <span class="visual-card-number">02</span>
-                    <span class="visual-card-title">SOFTWARE DEVELOPMENT</span>
-                    <span class="visual-card-detail">Build appropriate landing pages.</span>
-                </div>
-
-                <div class="visual-card visual-card-strategy">
-                    <span class="visual-card-number">03</span>
-                    <span class="visual-card-title">MARKETING CAMPAIGN</span>
-                    <span class="visual-card-detail">Target the right audience.</span>
-                </div>
-
-            </div>
-
-            <div class="visual-bottomline">
-                <span>WE'LL                                              STRATEGIZE</span>
-                <span class="visual-bottom-symbol">✳</span>
-                <span>EXECUTE</span>
-                <span class="visual-bottom-symbol">✳</span>
-                <span>THEN                                                ANALYZE</span>
-            </div>
-
+        <div class="hero-foot">
+          <span class="hero-mantra">CURIOUS BY NATURE. BUILT TO MAKE THINGS HAPPEN.</span><a href="#about">SCROLL TO DISCOVER <b>↓</b></a>
         </div>
-
-    </div>
-
-</section>
-
-
-<!-- About Section -->
-<section id="about">
-
-    <div class="about-content">
-
-        <div class="about-heading">
-            <span class="about-label">A LITTLE ABOUT ME</span>
-
+      </section>
+      <!-- 02. About: who I am and how I think -->
+      <section class="about-section" id="about">
+        <div class="about-image" role="img" aria-label="A missing piece in a puzzle, representing curiosity and finding your place">
+        </div>
+        <div class="about-overlay">
+        </div>
+        <div class="section-shell about-layout">
+          <div class="about-heading">
+            <p class="eyebrow dark-eyebrow">
+              A LITTLE ABOUT ME <span>— 01</span>
+            </p>
             <h2>
-                I'm Felix.
-                <span>Curious about ideas. Even more curious about making them happen.</span>
+              I'm Felix.<br><em>Curious about ideas.</em><br>Even more curious about making them happen.
             </h2>
-
-            <span class="about-side-note">DIGITAL MARKETING <span>+</span> SOFTWARE</span>
-        </div>
-
-        <div class="about-story">
-
+            <p class="about-stamp">
+              DIGITAL MARKETING <b>+</b> SOFTWARE
+            </p>
+          </div>
+          <div class="about-copy">
             <p class="about-lead">
-                Ever come across a business online and wonder what made you stop scrolling?
-                I do. I'm curious about the little things that make people notice, click and connect.
+              Ever come across a business online and wonder what made you stop scrolling? I do. I'm curious about the little things that make people notice, click and connect.
             </p>
-
             <p>
-                That curiosity pulled me into digital marketing. Then I wanted to understand
-                what happens after the click — the websites, tools and technology behind
-                the experience. That's what led me to software development.
+              That curiosity pulled me into digital marketing. Then I wanted to understand what happens after the click — the websites, tools and technology behind the experience. That's what led me to software development.
             </p>
-
             <p>
-                Now I enjoy working across both sides: helping ideas find their audience
-                and building digital experiences that bring them to life. I'm always
-                testing, learning and turning ideas into projects.
+              Now I enjoy working across both sides: helping ideas find their audience and building digital experiences that bring them to life. I'm always testing, learning and turning ideas into projects.
             </p>
-
-            <div class="about-closing">
-                Enough about me, though. Let's get to the interesting stuff.
+            <div class="about-signoff">
+              <span>Enough about me, though.</span><a class="about-project-link" href="#projects">Let's get to the interesting stuff <b>↘</b></a>
             </div>
-
+          </div>
         </div>
-
-    </div>
-
-</section>
-
-
-        <!-- Projects Section -->
-        <section id="projects">
-
-            <div class="projects-intro">
-                <span class="projects-eyebrow">SELECTED VENTURES / 2026</span>
-                <h2>Building businesses.<br><span>Learning by doing.</span></h2>
-                <p>
-                    These aren't just concepts sitting in a notebook. They're real ventures
-                    I'm helping shape, improve and build systems around. Here's a look at
-                    the work from both the marketing and technology sides.
-                </p>
-            </div>
-
-            <div class="project-grid">
-
-                <a class="project-card project-card-kuku" href="#kuku-case-study" aria-label="Explore the Kuku Mafia case study">
-                    <div class="project-card-top">
-                        <span class="project-index">01 / FOOD &amp; HOSPITALITY</span>
-                        <span class="project-stage">ONGOING</span>
-                    </div>
-                    <div class="project-card-main">
-                        <span class="project-monogram">KM.</span>
-                        <h3>Kuku Mafia</h3>
-                        <p class="project-description">
-                            Turning a neighbourhood chicken business into a more organised,
-                            recognisable and customer-friendly operation.
-                        </p>
-                    </div>
-                    <div class="project-card-bottom">
-                        <div class="project-disciplines">
-                            <span>Marketing</span>
-                            <span>Software &amp; Systems</span>
-                        </div>
-                        <span class="project-card-cta">Explore the work <span aria-hidden="true">↗</span></span>
-                    </div>
-                    <span class="project-card-watermark" aria-hidden="true">KM</span>
-                </a>
-
-                <a class="project-card project-card-tribe" href="#tribe-case-study" aria-label="Explore The Uncharted Tribe case study">
-                    <div class="project-card-top">
-                        <span class="project-index">02 / ADVENTURE &amp; EXPERIENCES</span>
-                        <span class="project-stage">IN DEVELOPMENT</span>
-                    </div>
-                    <div class="project-card-main">
-                        <span class="project-monogram">UT.</span>
-                        <h3>The Uncharted Tribe</h3>
-                        <p class="project-description">
-                            Building an adventure brand and the digital foundations that
-                            help turn good experiences into a community people can find.
-                        </p>
-                    </div>
-                    <div class="project-card-bottom">
-                        <div class="project-disciplines">
-                            <span>Marketing</span>
-                            <span>Software &amp; Systems</span>
-                        </div>
-                        <span class="project-card-cta">Explore the work <span aria-hidden="true">↗</span></span>
-                    </div>
-                    <span class="project-card-watermark" aria-hidden="true">UT</span>
-                </a>
-
-            </div>
-
-            <div class="projects-note">
-                <span class="projects-note-mark">↳</span>
-                <p>
-                    The numbers matter. As the work progresses, each case study will show
-                    the starting point, what changed and the measurable results — not
-                    numbers pulled out of thin air.
-                </p>
-            </div>
-
-            <div class="case-study-list">
-
-                <article class="case-study" id="kuku-case-study">
-                    <div class="case-study-heading">
-                        <div>
-                            <span class="case-study-kicker">01 / CASE STUDY</span>
-                            <h3>Kuku Mafia</h3>
-                            <p>Making the everyday customer experience work better.</p>
-                        </div>
-                        <a href="#projects" class="case-study-back">Back to projects ↑</a>
-                    </div>
-
-                    <div class="case-study-columns">
-                        <div class="case-study-track">
-                            <span class="track-number">01</span>
-                            <span class="track-label">MARKETING</span>
-                            <h4>Get noticed. Make ordering easier. Bring customers back.</h4>
-                            <p>
-                                The focus is on making the offer clear and appealing, improving
-                                how customers discover the menu and creating a more consistent
-                                path from seeing the food to placing an order.
-                            </p>
-                            <ul>
-                                <li>Brand and offer positioning</li>
-                                <li>Menu presentation and promotional content</li>
-                                <li>Customer communication and repeat orders</li>
-                            </ul>
-                        </div>
-
-                        <div class="case-study-track">
-                            <span class="track-number">02</span>
-                            <span class="track-label">SOFTWARE &amp; SYSTEMS</span>
-                            <h4>Less guesswork behind the counter.</h4>
-                            <p>
-                                The systems work is about making daily operations easier to
-                                track, understand and improve — starting with practical tools
-                                before adding unnecessary complexity.
-                            </p>
-                            <ul>
-                                <li>Digital POS setup and product records</li>
-                                <li>Sales, expense and stock tracking</li>
-                                <li>Simple reporting for better decisions</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="case-study-measurements">
-                        <div class="measurements-heading">
-                            <span>THE SCOREBOARD</span>
-                            <p>Performance figures will be added once they're consistently tracked.</p>
-                        </div>
-                        <div class="measurement-grid">
-                            <div><strong>—</strong><span>Orders tracked</span></div>
-                            <div><strong>—</strong><span>Revenue recorded</span></div>
-                            <div><strong>—</strong><span>Repeat customers</span></div>
-                            <div><strong>—</strong><span>Stock accuracy</span></div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="case-study case-study-tribe" id="tribe-case-study">
-                    <div class="case-study-heading">
-                        <div>
-                            <span class="case-study-kicker">02 / CASE STUDY</span>
-                            <h3>The Uncharted Tribe</h3>
-                            <p>From an adventure idea to a brand with a digital home.</p>
-                        </div>
-                        <a href="#projects" class="case-study-back">Back to projects ↑</a>
-                    </div>
-
-                    <div class="case-study-columns">
-                        <div class="case-study-track">
-                            <span class="track-number">01</span>
-                            <span class="track-label">MARKETING</span>
-                            <h4>Give people a reason to get out there.</h4>
-                            <p>
-                                The marketing direction is about shaping a recognisable
-                                adventure brand, communicating experiences clearly and
-                                building an audience that can grow into an active community.
-                            </p>
-                            <ul>
-                                <li>Brand positioning and identity direction</li>
-                                <li>Social media presence and content strategy</li>
-                                <li>Experience promotion and booking journey</li>
-                            </ul>
-                        </div>
-
-                        <div class="case-study-track">
-                            <span class="track-number">02</span>
-                            <span class="track-label">SOFTWARE &amp; SYSTEMS</span>
-                            <h4>Build the digital foundations behind the adventure.</h4>
-                            <p>
-                                The systems work focuses on giving the team a clearer way to
-                                organise information, coordinate responsibilities and manage
-                                the journey from discovery to participation.
-                            </p>
-                            <ul>
-                                <li>Digital touchpoints and website planning</li>
-                                <li>Team workflows and shared documentation</li>
-                                <li>Enquiry, registration and participant tracking</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="case-study-measurements">
-                        <div class="measurements-heading">
-                            <span>THE SCOREBOARD</span>
-                            <p>We'll track the audience, enquiries and experiences delivered as the brand grows.</p>
-                        </div>
-                        <div class="measurement-grid">
-                            <div><strong>—</strong><span>Audience growth</span></div>
-                            <div><strong>—</strong><span>Enquiries received</span></div>
-                            <div><strong>—</strong><span>Bookings completed</span></div>
-                            <div><strong>—</strong><span>Experiences delivered</span></div>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- Services Section -->
-        <section id="skills">
-
-            <h2>Services</h2>
-
-            <p>
-                Good ideas deserve to be seen. I help businesses
-                build their online presence through digital marketing,
-                social media and websites that give people a reason
-                to pay attention.
-            </p>
-
-
+        <span class="about-vertical">BUILT THROUGH CURIOSITY / NAIROBI, KENYA</span>
+      </section>
+      <!-- 03. Selected projects and ventures -->
+      <section class="projects-section" id="projects">
+        <div class="section-shell">
+          <div class="projects-heading">
             <div>
-
-                <h3>Social Media Management</h3>
-
-                <p>
-                    Helping brands stay active online, connect with
-                    their audience and create content with a purpose.
-                </p>
-
-                <ul>
-                    <li>Social media content planning</li>
-                    <li>Page management</li>
-                    <li>Audience engagement</li>
-                </ul>
-
+              <p class="eyebrow">
+                SELECTED VENTURES <span>— 02</span>
+              </p>
+              <h2>
+                Building businesses.<br><em>Brick by Brick.</em>
+              </h2>
             </div>
-
-
-            <div>
-
-                <h3>Digital Marketing &amp; SEO</h3>
-
-                <p>
-                    Helping businesses improve their online visibility
-                    and reach the people who matter to them.
-                </p>
-
-                <ul>
-                    <li>Digital marketing strategy</li>
-                    <li>Search engine optimisation (SEO)</li>
-                    <li>Content optimisation</li>
-                </ul>
-
-            </div>
-
-
-            <div>
-
-                <h3>Websites &amp; Online Presence</h3>
-
-                <p>
-                    Building websites that give businesses a home
-                    online and make it easier for potential customers
-                    to find out what they offer.
-                </p>
-
-                <ul>
-                    <li>Website design and development</li>
-                    <li>WordPress &amp; custom HTML websites</li>
-                    <li>Responsive design</li>
-                </ul>
-
-            </div>
-
-        </section>
-
-
-        <!-- Contact Section -->
-        <section id="contact">
-
-            <h2>Contact Me</h2>
-
-            <p>
-                If you have a project in mind or want to
-                discuss how I can help your business,
-                feel free to reach out.
+            <p class="projects-intro-copy">
+              <span>These aren't just concepts sitting in my notebook anymore. They're real ventures I'm helping shape, improve and build systems around. Here's a look at the work from both the marketing and technology sides.</span>
             </p>
-
+          </div>
+          <div class="project-feature-grid">
+            <a class="venture-card kuku-card" href="#kuku-case-study" aria-label="Explore Kuku Mafia case study">
+            <div class="venture-art kuku-art">
+              <img src="https://images.pexels.com/photos/19264385/pexels-photo-19264385.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Golden crispy fried chicken pieces" loading="lazy">
+              <div class="venture-shade">
+              </div>
+              <div class="venture-top">
+                <span>01 / FOOD & HOSPITALITY</span><span>ONGOING</span>
+              </div>
+              <div class="kuku-art-title">
+                CRISPY.<br><em>JUICY.</em><br>TENDER.
+              </div>
+              <div class="kuku-art-stamp">
+                JOIN<br>THE<br>FAMILY
+              </div>
+              <div class="venture-bottom">
+                <strong>KUKU MAFIA</strong><span>FOR THE PEOPLE ↗</span>
+              </div>
+            </div>
+            <div class="venture-info">
+              <div>
+                <span class="venture-number">01</span>
+                <h3>
+                  Kuku Mafia
+                </h3>
+              </div>
+              <p>
+                Making a neighbourhood chicken business more recognisable, easier to order from and better organised behind the scenes.
+              </p>
+              <div class="venture-tags">
+                <span>Brand & Marketing</span><span>Business Systems</span><b>EXPLORE ↗</b>
+              </div>
+            </div>
+            </a><a class="venture-card tribe-card" href="#tribe-case-study" aria-label="Explore The Uncharted Tribe case study">
+            <div class="venture-art tribe-art">
+              <img class="tribe-waterfall" src="https://images.pexels.com/photos/24604559/pexels-photo-24604559.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Waterfall cutting through a lush green landscape" loading="lazy">
+              <div class="venture-shade">
+              </div>
+              <img class="tribe-leopard" src="https://images.pexels.com/photos/37217866/pexels-photo-37217866/free-photo-of-close-up-portrait-of-a-majestic-leopard.jpeg?auto=compress&dpr=1&h=1200&w=1800" alt="Distinctive close-up portrait of a leopard" loading="lazy">
+              <div class="venture-top">
+                <span>02 / ADVENTURE & EXPERIENCES</span><span>IN DEVELOPMENT</span>
+              </div>
+              <div class="tribe-art-title">
+                GO<br><em>BEYOND.</em>
+              </div>
+              <div class="tribe-art-caption">
+                DISCOVER / EXPLORE / CONQUER
+              </div>
+              <div class="venture-bottom">
+                <strong>THE UNCHARTED TRIBE</strong><span>FIND YOUR IKIGAI ↗</span>
+              </div>
+            </div>
+            <div class="venture-info">
+              <div>
+                <span class="venture-number">02</span>
+                <h3>
+                  The Uncharted Tribe
+                </h3>
+              </div>
+              <p>
+                Building an adventure brand and the digital foundations that turn good experiences into a community people can find.
+              </p>
+              <div class="venture-tags">
+                <span>Brand & Marketing</span><span>Digital Experience</span><b>EXPLORE ↗</b>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="proof-note">
+            <span>↳</span>
             <p>
-                Email:
-                <a href="mailto:mbuguafelix27@gmail.com">
-                    mbuguafelix27@gmail.com
-                </a>
+              The numbers matter. Each case study will show the starting point, what changed and the measurable results — not numbers pulled out of thin air.
             </p>
-
-        </section>
-
+          </div>
+        </div>
+      </section>
+      <!-- 04. Case study: Kuku Mafia -->
+      <section class="case-section kuku-case" id="kuku-case-study">
+        <div class="section-shell">
+          <div class="case-heading">
+            <div>
+              <p class="eyebrow">
+                01 / CASE STUDY <span>— FOOD & HOSPITALITY</span>
+              </p>
+              <h2>
+                Kuku Mafia<span>.</span>
+              </h2>
+              <p>
+                Making the everyday chicken experience work better.
+              </p>
+            </div>
+            <a class="case-back" href="#projects">BACK TO PROJECTS ↑</a>
+          </div>
+          <div class="kuku-board">
+            <div class="kuku-board-photo">
+              <img src="https://images.pexels.com/photos/19264385/pexels-photo-19264385.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="Close-up of freshly fried chicken" loading="lazy">
+              <div class="kuku-board-shade">
+              </div>
+              <span class="board-label">KUKU MAFIA / THE CHICKEN JOINT</span>
+              <div class="kuku-board-wordmark">
+                KUKU<br><em>MAFIA.</em>
+              </div>
+              <span class="kuku-board-slogan">HOT. CRISPY. FOR THE PEOPLE.</span>
+            </div>
+            <div class="kuku-menu-board">
+              <span class="board-label">THE MENU / THE MAIN EVENT</span>
+              <h3>
+                PROPER CHICKEN.<br>BIG CRAVINGS.
+              </h3>
+              <div class="menu-lines">
+                <div>
+                  <span>CHICKEN PIECES</span><b>THE MAIN EVENT</b>
+                </div>
+                <div>
+                  <span>SMOCHA & SMOKIES</span><b>THE GOOD STUFF</b>
+                </div>
+                <div>
+                  <span>CHIPS & WEDGES</span><b>MAKE IT A MEAL</b>
+                </div>
+              </div>
+              <span class="menu-board-foot">FRESH FROM THE FRYER / KM—001</span>
+            </div>
+          </div>
+          <div class="case-columns">
+            <article class="case-track">
+              <span class="track-index">01</span>
+              <p class="track-label">
+                MARKETING & CUSTOMER EXPERIENCE
+              </p>
+              <h3>
+                Get noticed. Make ordering easier. Bring customers back.
+              </h3>
+              <p>
+                The focus is on making the offer clear and appealing, improving how customers discover the menu and creating a more consistent path from seeing the food to placing an order.
+              </p>
+              <ul>
+                <li>
+                  Brand and offer positioning
+                </li>
+                <li>
+                  Menu presentation and promotional content
+                </li>
+                <li>
+                  Customer communication and repeat orders
+                </li>
+              </ul>
+            </article>
+            <article class="case-track">
+              <span class="track-index">02</span>
+              <p class="track-label">
+                SOFTWARE & BUSINESS SYSTEMS
+              </p>
+              <h3>
+                Less guesswork behind the counter.
+              </h3>
+              <p>
+                The systems work is about making daily operations easier to track, understand and improve — starting with practical tools before adding unnecessary complexity.
+              </p>
+              <ul>
+                <li>
+                  Digital POS setup and product records
+                </li>
+                <li>
+                  Sales, expense and stock tracking
+                </li>
+                <li>
+                  Simple reporting for better decisions
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="scoreboard">
+            <div class="score-intro">
+              <span class="eyebrow">THE SCOREBOARD</span>
+              <p>
+                Illustrative figures for this animation preview — replace these with verified Kuku Mafia records.
+              </p>
+            </div>
+            <div class="score-grid">
+              <div>
+                <strong data-count="128">0</strong><span>Orders</span>
+              </div>
+              <div>
+                <strong data-count="18450" data-prefix="KSh " data-format="currency">KSh 0</strong><span>Revenue</span>
+              </div>
+              <div>
+                <strong data-count="32" data-suffix="%">0%</strong><span>Repeat customers</span>
+              </div>
+              <div>
+                <strong data-count="144" data-prefix="KSh " data-format="currency">KSh 0</strong><span>Average order value</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 05. Case study: The Uncharted Tribe -->
+      <section class="case-section tribe-case" id="tribe-case-study">
+        <div class="section-shell">
+          <div class="case-heading">
+            <div>
+              <p class="eyebrow">
+                02 / CASE STUDY <span>— ADVENTURE & EXPERIENCES</span>
+              </p>
+              <h2>
+                The Uncharted Tribe<span>.</span>
+              </h2>
+              <p>
+                From an adventure idea to a brand with a digital home.
+              </p>
+            </div>
+            <a class="case-back" href="#projects">BACK TO PROJECTS ↑</a>
+          </div>
+          <div class="tribe-board">
+            <div class="tribe-board-landscape">
+              <video class="tribe-board-film" muted loop playsinline preload="none" poster="https://images.pexels.com/photos/24604559/pexels-photo-24604559.jpeg?auto=compress&cs=tinysrgb&w=1600" aria-hidden="true">
+                <source src="https://videos.pexels.com/video-files/36450898/15457109_3840_2160_30fps.mp4" type="video/mp4">
+              </video>
+              <div class="tribe-landscape-shade">
+              </div>
+              <span class="board-label">THE OUTDOORS ARE WAITING</span>
+              <h3>
+                FIND YOUR<br><em>IKIGAI.</em>
+              </h3>
+              <span class="tribe-landscape-foot">TRAILS / WATERFALLS / WILDLIFE / PEOPLE</span>
+            </div>
+            <div class="tribe-board-leopard">
+              <img src="https://images.pexels.com/photos/37217866/pexels-photo-37217866/free-photo-of-close-up-portrait-of-a-majestic-leopard.jpeg?auto=compress&dpr=1&h=1200&w=1800" alt="Leopard looking directly towards the camera" loading="lazy">
+              <div class="tribe-leopard-shade">
+              </div>
+              <span class="tribe-wordmark-small">THE</span><strong>UNCHARTED<br>TRIBE.</strong><span class="tribe-leopard-foot">DISCOVER / EXPLORE / CONQUER</span>
+            </div>
+          </div>
+          <div class="case-columns">
+            <article class="case-track">
+              <span class="track-index">01</span>
+              <p class="track-label">
+                BRAND & COMMUNITY
+              </p>
+              <h3>
+                Give people a reason to get out there.
+              </h3>
+              <p>
+                The marketing direction is about shaping a recognisable adventure brand, communicating experiences clearly and building an audience that can grow into an active community.
+              </p>
+              <ul>
+                <li>
+                  Brand positioning and identity direction
+                </li>
+                <li>
+                  Social media presence and content strategy
+                </li>
+                <li>
+                  Experience promotion and booking journey
+                </li>
+              </ul>
+            </article>
+            <article class="case-track">
+              <span class="track-index">02</span>
+              <p class="track-label">
+                DIGITAL EXPERIENCE & SYSTEMS
+              </p>
+              <h3>
+                Build the foundations behind the adventure.
+              </h3>
+              <p>
+                The systems work focuses on giving the team a clearer way to organise information, coordinate responsibilities and manage the journey from discovery to participation.
+              </p>
+              <ul>
+                <li>
+                  Digital touchpoints and website planning
+                </li>
+                <li>
+                  Team workflows and shared documentation
+                </li>
+                <li>
+                  Enquiry, registration and participant tracking
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="scoreboard">
+            <div class="score-intro">
+              <span class="eyebrow">THE SCOREBOARD</span>
+              <p>
+                Illustrative figures for this animation preview — replace these with verified audience and event records.
+              </p>
+            </div>
+            <div class="score-grid">
+              <div>
+                <strong data-count="2400">0</strong><span>Audience reach</span>
+              </div>
+              <div>
+                <strong data-count="86">0</strong><span>Enquiries</span>
+              </div>
+              <div>
+                <strong data-count="32">0</strong><span>Bookings</span>
+              </div>
+              <div>
+                <strong data-count="4">0</strong><span>Experiences delivered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 06. Services: each card opens a dedicated page -->
+      <section class="services-section" id="services">
+        <div class="section-shell">
+          <div class="services-intro">
+            <p class="eyebrow dark-eyebrow">
+              WHAT I BRING TO THE TABLE <span>— 03</span>
+            </p>
+            <h2>
+              From the first idea<br>to <em>what's next.</em>
+            </h2>
+            <p>
+              Good digital work is more than posting content or putting a website online. It's about making the pieces work together — so people can find you, understand you and take the next step.
+            </p>
+            <div class="process-line">
+              <span>WE'LL STRATEGIZE</span><b>→</b><span>EXECUTE</span><b>→</b><span>THEN ANALYZE</span>
+            </div>
+          </div>
+          <div class="service-grid">
+            <a class="service-card service-link" href="digital-marketing.html"><span class="service-count">01 / GET FOUND</span>
+            <div class="service-symbol">
+              ↗
+            </div>
+            <h3>
+              Digital<br>Marketing
+            </h3>
+            <p>
+              Make it easier for the right people to discover your business, understand what you offer and remember your brand.
+            </p>
+            <ul>
+              <li>
+                Digital marketing strategy
+              </li>
+              <li>
+                Social media planning & management
+              </li>
+              <li>
+                SEO and content optimisation
+              </li>
+              <li>
+                Campaign planning and analysis
+              </li>
+            </ul>
+            <span class="service-foot">ATTENTION WITH A PURPOSE</span><span class="service-explore">EXPLORE THIS SKILL ↗</span></a><a class="service-card service-link" href="web-development.html"><span class="service-count">02 / MAKE IT WORK</span>
+            <div class="service-symbol">
+              ⌘
+            </div>
+            <h3>
+              Websites &<br>Development
+            </h3>
+            <p>
+              Give your business a useful, memorable home online — designed around what visitors need to do next.
+            </p>
+            <ul>
+              <li>
+                Website design & development
+              </li>
+              <li>
+                Responsive business websites
+              </li>
+              <li>
+                WordPress and custom front-end builds
+              </li>
+              <li>
+                Practical digital tools and improvements
+              </li>
+            </ul>
+            <span class="service-foot">BUILT FOR REAL PEOPLE</span><span class="service-explore">EXPLORE THIS SKILL ↗</span></a><a class="service-card service-link" href="digital-systems.html"><span class="service-count">03 / KEEP IMPROVING</span>
+            <div class="service-symbol">
+              ◎
+            </div>
+            <h3>
+              Digital<br>Systems
+            </h3>
+            <p>
+              Bring a little more order to the work behind the scenes with straightforward digital tools and better workflows.
+            </p>
+            <ul>
+              <li>
+                Digital workflow planning
+              </li>
+              <li>
+                Business process organisation
+              </li>
+              <li>
+                Simple tracking and reporting setups
+              </li>
+              <li>
+                Ongoing testing and optimisation
+              </li>
+            </ul>
+            <span class="service-foot">LESS GUESSWORK. MORE CLARITY.</span><span class="service-explore">EXPLORE THIS SKILL ↗</span></a>
+          </div>
+        </div>
+      </section>
+      <!-- 07. Contact: the next step -->
+      <section class="contact-section" id="contact">
+        <div class="contact-orbit">
+        </div>
+        <div class="section-shell contact-inner">
+          <p class="eyebrow">
+            HAVE A GOOD ONE IN MIND? <span>— 04</span>
+          </p>
+          <h2>
+            Let's make<br><em>it happen.</em>
+          </h2>
+          <p>
+            If you have a project in mind or want to discuss how I can help your business, let's talk.
+          </p>
+          <a class="contact-email" href="mailto:mbuguafelix27@gmail.com">mbuguafelix27@gmail.com <b>↗</b></a>
+        </div>
+      </section>
     </main>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            &copy; 2026 Felix The Freelancer. All rights reserved.
-        </p>
-
+    <!-- Footer and final navigation -->
+    <footer class="site-footer">
+      <div class="section-shell">
+        <div class="footer-main">
+          <a class="footer-brand" href="#home"><span class="footer-brand-mark">F<span>T</span></span><b>FELIX THE FREELANCER</b></a>
+          <p>
+            Good ideas deserve a strong digital presence.<br>Let's make yours happen.
+          </p>
+          <div class="footer-links">
+            <span>KEEP EXPLORING</span><a href="#about">About</a><a href="#projects">Portfolio</a><a href="#services">Services</a><a href="#contact">Contact</a>
+          </div>
+          <div class="footer-social">
+            <span>START A CONVERSATION</span><a href="mailto:mbuguafelix27@gmail.com">Email me ↗</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 FELIX THE FREELANCER</span><span>STRATEGIZE. EXECUTE. ANALYZE.</span><a href="#home">BACK TO TOP ↑</a>
+        </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
-
-
