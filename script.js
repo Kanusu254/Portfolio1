@@ -143,3 +143,49 @@ if (heroStage) {
         });
     }
 }
+
+
+/* 4. VISUAL EXPERIENCE: reveal and gentle card movement */
+const visualRevealTargets = document.querySelectorAll(
+    ".project-card, .case-study, #about .about-content, #skills > div"
+);
+
+if ("IntersectionObserver" in window) {
+    visualRevealTargets.forEach((element, index) => {
+        element.classList.add("reveal-on-scroll");
+        element.style.transitionDelay = `${(index % 3) * 75}ms`;
+    });
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    visualRevealTargets.forEach(element => revealObserver.observe(element));
+} else {
+    visualRevealTargets.forEach(element => element.classList.add("is-visible"));
+}
+
+const projectCards = document.querySelectorAll(".project-card");
+const supportsHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (supportsHover && !prefersReducedMotion) {
+    projectCards.forEach(card => {
+        card.addEventListener("pointermove", event => {
+            const rect = card.getBoundingClientRect();
+            const x = (event.clientX - rect.left) / rect.width - 0.5;
+            const y = (event.clientY - rect.top) / rect.height - 0.5;
+            card.style.setProperty("--pointer-x", `${x * 12}px`);
+            card.style.setProperty("--pointer-y", `${y * 12}px`);
+        });
+        card.addEventListener("pointerleave", () => {
+            card.style.setProperty("--pointer-x", "0px");
+            card.style.setProperty("--pointer-y", "0px");
+        });
+    });
+}
