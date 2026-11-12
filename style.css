@@ -2718,7 +2718,7 @@ nav{min-height:70px;padding:10px clamp(22px,6vw,90px)}
 #hero.hero-cinematic .hero-capabilities i{width:4px;height:4px;border-radius:50%;background:#d69a65}
 /* About: Jenga image right on desktop, full-bleed soft image on mobile */
 #about.about-photo-section{position:relative;isolation:isolate;overflow:hidden;padding:clamp(95px,11vw,150px) 8%;background:#eee9dd;color:#1a211c;animation:none}
-.about-photo{position:absolute;z-index:-2;inset:0 0 0 44%;background-image:url("https://images.pexels.com/photos/8791160/pexels-photo-8791160.jpeg?auto=compress&cs=tinysrgb&w=1800");background-size:cover;background-position:center 47%;opacity:.92}
+.about-photo{position:absolute;z-index:-2;inset:0 0 0 44%;background-image:url("https://images.pexels.com/photos/4399406/pexels-photo-4399406.jpeg?auto=compress&cs=tinysrgb&w=1800");background-size:cover;background-position:center 47%;opacity:.92}
 .about-photo-shade{position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#eee9dd 0%,#eee9dd 37%,rgba(238,233,221,.92) 48%,rgba(238,233,221,.45) 69%,rgba(16,22,18,.12) 100%)}
 #about .about-content{position:relative;width:min(1280px,100%);grid-template-columns:.88fr 1.12fr;gap:clamp(45px,8vw,125px)}
 #about .about-heading h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(47px,5.3vw,76px);line-height:.99;letter-spacing:-.065em;font-weight:600;color:#18231b}
