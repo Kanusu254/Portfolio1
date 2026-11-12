@@ -19,13 +19,36 @@ document.querySelectorAll(".hero-film,.tribe-board-film").forEach(video=>{
 const revealItems=document.querySelectorAll(".venture-card,.case-track,.scoreboard,.service-card,.about-copy");
 if(!reducedMotion&&"IntersectionObserver"in window){revealItems.forEach(item=>item.classList.add("reveal"));const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}}),{threshold:.12});revealItems.forEach(item=>observer.observe(item));}
 
-const demoCounter=document.querySelector(".demo-progress");
-if(demoCounter&&!reducedMotion&&"IntersectionObserver"in window){
- const counter=demoCounter.querySelector("[data-count]");let started=false;
- const countObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
-  if(entry.isIntersecting&&!started){started=true;demoCounter.classList.add("is-visible");const duration=1500,start=performance.now();
-   const tick=now=>{const p=Math.min((now-start)/duration,1);counter.textContent=String(Math.round(40*(1-Math.pow(1-p,3))));if(p<1)requestAnimationFrame(tick);};
-   requestAnimationFrame(tick);countObserver.disconnect();
-  }
- }),{threshold:.35});countObserver.observe(demoCounter);
-}else if(demoCounter){demoCounter.classList.add("is-visible");const counter=demoCounter.querySelector("[data-count]");if(counter)counter.textContent="40";}
+
+const scoreboards=document.querySelectorAll(".scoreboard");
+function finalScore(counter){
+ const value=Number(counter.dataset.count);
+ const prefix=counter.dataset.prefix||"";
+ const suffix=counter.dataset.suffix||"";
+ const formatted=value.toLocaleString("en-KE");
+ counter.textContent=prefix+formatted+suffix;
+}
+if("IntersectionObserver"in window&&!reducedMotion){
+ scoreboards.forEach(board=>{
+  let started=false;
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+   if(!entry.isIntersecting||started)return;
+   started=true;
+   board.querySelectorAll("[data-count]").forEach(counter=>{
+    const target=Number(counter.dataset.count),prefix=counter.dataset.prefix||"",suffix=counter.dataset.suffix||"";
+    const duration=1750,start=performance.now();
+    const render=now=>{
+     const progress=Math.min((now-start)/duration,1);
+     const value=Math.round(target*(1-Math.pow(1-progress,3)));
+     counter.textContent=prefix+value.toLocaleString("en-KE")+suffix;
+     if(progress<1)requestAnimationFrame(render);
+    };
+    requestAnimationFrame(render);
+   });
+   observer.unobserve(board);
+  }),{threshold:.25});
+  observer.observe(board);
+ });
+}else{
+ scoreboards.forEach(board=>board.querySelectorAll("[data-count]").forEach(finalScore));
+}
