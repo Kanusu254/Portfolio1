@@ -107,7 +107,7 @@ async function playHeroSequence() {
   }
 
   await wait(650);
-  await typeText(intro, "HELLO, I'M FELIX.", 68);
+  await typeText(intro, "HELLO, I'M FELIX.", 78);
   cursor?.remove();
 
   discipline?.classList.add("is-visible");
@@ -117,7 +117,7 @@ async function playHeroSequence() {
   const headingParts = heading.querySelectorAll("[data-type-text]");
 
   for (const part of headingParts) {
-    await typeText(part, part.dataset.typeText, 27);
+    await typeText(part, part.dataset.typeText, 58);
   }
 
   heading.classList.add("is-visible");
@@ -125,11 +125,11 @@ async function playHeroSequence() {
   // Reveal and type the supporting paragraph.
   await wait(120);
   description.classList.add("is-visible");
-  await typeText(description, description.dataset.typeText, 11);
+  await typeText(description, description.dataset.typeText, 48);
   actions?.classList.add("is-visible");
 
-  // Finish with the IDEAS INTO ACTION workbench.
-  await wait(380);
+  // Finish with the TURNING IDEAS INTO ACTION workbench.
+  await wait(600);
   consoleGraphic?.classList.add("is-visible");
 }
 
