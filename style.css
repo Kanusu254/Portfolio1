@@ -86,54 +86,43 @@ img,video {
 }
 
 .brand-mark {
-  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:42px;
+  flex:none
+}
+
+.architect-mark {
+  display:block;
+  width:100%;
+  height:100%;
+  overflow:visible
+}
+
+.mark-white { fill:#f4f0e7 }
+.mark-gold { fill:#dca21b }
+
+.footer-brand-mark {
   display:flex;
   align-items:center;
   justify-content:center;
   width:42px;
-  height:38px;
-  border:1px solid #d5b18b;
-  border-radius:5px 15px 5px 15px;
-  font:900 17px/.9 "Trebuchet MS",Arial,sans-serif;
-  letter-spacing:-3px;
-  transform:skew(-7deg)
-}
-
-.brand-mark i {
-  font-style:normal;
-  color:#f4f0e7
-}
-
-.brand-mark b {
-  margin:7px 0 0 -1px;
-  color:#d5b18b;
-  font-size:13px
-}
-
-.footer-brand-mark {
-  display:grid;
-  place-items:center;
-  width:44px;
-  height:40px;
-  border:1px solid #d5b18b;
-  border-radius:5px 15px 5px 15px;
-  font:900 19px/.9 "Trebuchet MS",Arial,sans-serif;
-  letter-spacing:-3px;
-  transform:skew(-7deg)
-}
-
-.footer-brand-mark span {
-  margin:7px 0 0 -1px;
-  color:#d5b18b;
-  font-size:14px
+  height:44px;
+  flex:none
 }
 
 .brand-name {
-  font-size:8px;
-  font-weight:900;
-  line-height:1.35;
-  letter-spacing:1.6px
+  color:#f4f0e7;
+  font-size:12px;
+  font-weight:650;
+  line-height:1.02;
+  letter-spacing:-.35px;
+  white-space:nowrap
 }
+
+.brand-name span { color:#dca21b }
 
 .primary-navigation {
   display:flex;
@@ -388,7 +377,7 @@ img,video {
 
 .hero-console.is-visible {
   visibility:visible;
-  animation:console-arrive .9s cubic-bezier(.2,.8,.2,1) both
+  animation:console-arrive 1.35s cubic-bezier(.2,.8,.2,1) both
 }
 
 @keyframes console-arrive {
@@ -414,9 +403,9 @@ img,video {
   padding:0 17px;
   border-bottom:1px solid #ffffff26;
   color:#b4bdb3;
-  font-size:8px;
+  font-size:7px;
   font-weight:800;
-  letter-spacing:1.5px
+  letter-spacing:.9px
 }
 
 .console-lights {
@@ -2169,7 +2158,8 @@ img,video {
 
   .console-top {
     padding:0 12px;
-    font-size:7px
+    font-size:6px;
+    letter-spacing:.6px
   }
 
   .console-code,.console-plan {
